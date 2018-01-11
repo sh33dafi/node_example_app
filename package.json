@@ -1,0 +1,26 @@
+{
+  "name": "node_example_app",
+  "version": "1.0.0",
+  "description": "Example node app, using DI, ...",
+  "main": "dist/app.js",
+  "author": "Yannick Houbrix <yannick.houbrix@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.5.2",
+    "fuse-box": "^2.5.0-beta.1",
+    "ts-node": "^4.0.2",
+    "typescript": "^2.6.2",
+    "uglify-es": "^3.2.2"
+  },
+  "scripts": {
+    "build": "node fuse.js",
+    "start:build": "node fuse && node dist/app",
+    "start": "ts-node src/main.ts"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "injection-js": "^2.2.1",
+    "js-restful-express": "^3.1.0",
+    "reflect-metadata": "^0.1.10"
+  }
+}
