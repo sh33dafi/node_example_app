@@ -7,6 +7,7 @@ import {TestController} from './test.controller';
 ApplicationContext.instance()
     .register(TestService)
     .register(FooService)
+    .register(TestController)
     .bootstrap();
 
 ExpressConfiguration.configure().bootstrap();
